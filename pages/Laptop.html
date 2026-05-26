@@ -1,0 +1,95 @@
+<?php
+session_start();
+?>
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>COMPRA FACIL</title>
+        <link rel="shortcut icon" href="Image/Logo.ico">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Noto+Sans+JP&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<header>
+		<nav class="navbar">
+			<div class="contenedor">
+				<a href="#">Inicio</a>
+				<a href="#">Ofertas</a>
+				<a href="Ropa.html">Moda</a>
+				<a href="#">Soporte</a>
+				<a href="#">Cartera</a>
+<?php if(isset($_SESSION['usuario'])): ?>
+    <div class="user-menu">
+        <span class="user-name"><?php echo $_SESSION['usuario']; ?></span>
+        <div class="dropdown">
+            <a href="php/logout.php">Cerrar sesión</a>
+        </div>
+    </div>
+<?php else: ?>
+    <a href="Registro.php">Iniciar Sesión</a>
+<?php endif; ?>
+			</div>
+		</nav>
+<h2><a href="Computadora.html">Computadora</a></h2>
+<h3>Laptop</a></h3>
+<img src="Image/product-1.png" width=23%>
+<h4>Precio: $360.500 PE</h4>
+<h5>INTEL core i9 10th GEN</h5>
+<h5>16gb RAM 3200 Mhz</h5>
+<h5>Disc Solido 500gb kingstom</h5>
+<h5>RTX 3060 IT<H5>
+<h2>DESCRIPCION</h2>
+<p>Es una computadora especificamente para GAMER o para trabajo que no tendra ningun problema con usar mas de 5 app a las ves. Su soporte de temperatura lo mantiene estable hasta 25° por lo cual su laptop es muy poco frecuente de calentarce alemnos que este ejerciendo una gran cantidad de recurso como bendria hacer "DICEÑO", Por lo cual es una de nuestra mejores laptop que podemos ofrecer. </p>
+<h2>COSAS QUE TE INTERECEN</H2>
+    <body>
+        <div class="page-content">
+            <div class="card">
+                <img src="image/product-4.jpg" alt="Avatar" style="width:300px">
+                    <div class="container">
+                        <h4><b>Rack Grande Estilo Industrial</b></h4>
+                            <div class="v">
+                                <p>$33.869</p>
+                            </div>
+                            <button class="button-add">Añadir al carrito</button>
+                    </div>
+            </div> 
+            <div class="card">
+                <img src="image/product-3.jpg" alt="Avatar" style="width:300px">
+                    <div class="container">
+                        <h4><b>Sofa Esquinero con Puff Jecay</b></h4>
+                            <div class="v">
+                                <p>$84.599</p>
+                            </div>
+                            <button class="button-add">Añadir al carrito</button>
+                    </div>
+            </div> 
+            <div class="card">
+                <img src="image/product-2.jpg" alt="Avatar" style="width:300px">
+                    <div class="container">
+                        <h4><b>PC GAMER GM CARBIDE I5 GF1660TI</b></h4>
+                            <div class="v">
+                                <p>$422.749</p>
+                            </div>
+                            <button class="button-add">Añadir al carrito</button>
+                    </div>
+            </div>
+
+            <div class="card">
+                <img src="image/product-1.png" alt="Avatar" style="width:300px">
+                    <div class="container">
+                        <h4><b>Laptop gamer Legion 7i 6ta Gen</b></h4>
+                            <div class="v">
+                                <p>$857.999</p>
+                            </div>
+                            <button class="button-add">Añadir al carrito</button>
+                    </div>
+            </div>
+        </div>
+    </body>
+</body>
+<hr>
+Bouhid, Lazaro Ivan
+</html> 
