@@ -29,25 +29,22 @@ session_start();
 				<a href="#">Soporte</a>
 				<a href="#">Cartera</a>
 				<?php if(isset($_SESSION['usuario'])): ?>
-				<div class="user-container">
-					<a href="javascript:void(0)" class="user-icon">
-						<?php echo $_SESSION['usuario']; ?>
-					</a>
-
-					<div class="dropdown-menu">
-						<div class="dropdown-wrapper">
-							<div class="user-info">
+				<a href="javascript:void(0)" class="user-icon"><?php echo $_SESSION['usuario']; ?></a>
+				<section class="user-container">
+					<section class="dropdown-menu">
+						<section class="dropdown-wrapper">
+							<section class="user-info">
 								<h3><?php echo $_SESSION['nombre']; ?></h3>
-							</div>
+							</section>
 							<hr>
-							<div class="menu-options">
-								<div>
+							<section class="menu-options">
+								<section>
 									<a href="php/logout.php">Cerrar sesión</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>					
+								</section>
+							</section>
+						</section>
+					</section>
+				</section>
 			</div>	
 		</nav>
 					<?php else: ?>

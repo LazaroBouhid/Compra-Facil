@@ -171,21 +171,28 @@ aside .indice a {
 	display: inline-block;
 }
 
-.dropdown-menu {
+.user-icon{
+	display: inline-block;
+}
+
+.dropdown-menu{
 	position: absolute;
-	top: 100%; 
-	right: -94px;
+	top: calc(100% + 10px);
+	left: 50%;
+	transform: translateX(-50%);
 	background-color: #fff;
 	box-shadow: 0 0 10px rgba(0,0,0,0.3);
 	width: 168px;
+	border-radius: 10px;
 	overflow: hidden;
 	max-height: 0;
-	transition: max-height 0.5s;
+	opacity: 0;
+	transition: all 0.3s ease;
+	z-index: 100;
 }
+
 .dropdown-wrapper {
-
 	padding: 20px;
-
 }
 
 .user-info {
@@ -193,33 +200,38 @@ aside .indice a {
 	align-items: center;
 	gap: 15px;
 }
+
 .user-info a{
 	font-size: 1.2em;
 }
+
 .dropdown-menu hr{
 	margin: 15px 0;
 	border: 0;
 	height: 1px;
 	background-color: #ccc;
 }
+
 .menu-options {
 	display: flex;
 	flex-direction: column;
 	gap: 13px;
 }
+
 .menu-options div{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 }
+
 .menu-options span{
 	font-size: 20px;
-	color: #aaa;
-	
+	color: #aaa;	
 }
-.open-menu {
-	max-height: 400px;
 
+.open-menu{
+	max-height: 400px;
+	opacity: 1;
 }
 /* * ============================== */
 /* * ====== MEDIA QUERIES ========= */

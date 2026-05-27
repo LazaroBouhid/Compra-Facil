@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         echo ' 
         <script>
         alert("La contraseña debe tener mínimo 10 caracteres, mayúscula, minúscula y número")
-        window.location = "../registro.php";
+        window.location = "../pages/registro.php";
         </script>
         ';
         exit();
@@ -28,7 +28,7 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     echo ' 
     <script>
     alert("Ingrese un correo electrónico válido");
-    window.location = "../registro.php";
+    window.location = "../pages/registro.php";
     </script>
     ';
     exit();
@@ -42,7 +42,7 @@ if (!empty($dominio) && !checkdnsrr($dominio, "MX")) {
     echo ' 
     <script>
     alert("El dominio del correo no es válido");
-    window.location = "../registro.php";
+    window.location = "../pages/registro.php";
     </script>
     ';
     exit();
@@ -52,7 +52,7 @@ if (!preg_match('/^[\p{L}]+(\s[\p{L}]+)*$/u', $nombre)) {
     echo "
     <script>
         alert('El nombre solo puede contener letras y un solo espacio entre nombres');
-        window.location.href = '../registro.php';
+        window.location.href = '../pages/registro.php';
     </script>";
     exit();
 }
@@ -62,7 +62,7 @@ if (!preg_match('/^[\p{L}]+(\s[\p{L}]+)*$/u', $nombre)) {
         echo ' 
          <script>
          alert("Este usuario ya esta en uso, Pruebe con otro.")
-         window.location = "../registro.php";
+         window.location = "../pages/registro.php";
          </script>
         ';
         exit();
@@ -74,7 +74,7 @@ if (!checkdnsrr($dominio, "MX")) {
     echo ' 
     <script>
     alert("El correo no existe o el dominio no es válido");
-    window.location = "../registro.php";
+    window.location = "../pages/registro.php";
     </script>
     ';
     exit();
@@ -86,7 +86,7 @@ if (!checkdnsrr($dominio, "MX")) {
         echo ' 
          <script>
          alert("Este correo ya esta en uso, pruebe con otro.")
-         window.location = "../registro.php";
+         window.location = "../pages/registro.php";
          </script>
         ';
         exit();
@@ -104,12 +104,12 @@ if (!checkdnsrr($dominio, "MX")) {
     if($ejecutar){
        echo "<script>
             alert('Usuario registrado exitosamente');
-            window.location = '../registro.php';
+            window.location = '../pages/registro.php';
         </script>";
     }else{
         echo "<script>
             alert('Error Intentalo nuevamente');
-            window.location = '../registro.php';
+            window.location = '../pages/registro.php';
         </script>";
     }
 }
