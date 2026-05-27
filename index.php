@@ -13,6 +13,7 @@ session_start();
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Noto+Sans+JP&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" href="css/styles.css">
 </head>
+<body>
 <header>
 	<script>
 		document.querySelectorAll("h1, h2, h3").forEach(el => {
@@ -69,7 +70,6 @@ session_start();
 					<a href="#">Libreria</a>
 				</nav>
 			</aside>
-<body>
 <div class="page-content">
 	<div class="card">
 		<img src="access/img/product-4.jpg" alt="Avatar" style="width:300px">
@@ -113,6 +113,8 @@ session_start();
 			</div>
 	  </div>
 </div>
+</main>
+<footer></footer>
 
 <script>
 const userIcon = document.querySelector('.user-icon'); 
