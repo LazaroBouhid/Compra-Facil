@@ -16,11 +16,13 @@ session_start();
 <body>
 <header>
 	<script>
+	document.addEventListener("DOMContentLoaded", () => {
 		document.querySelectorAll("h1, h2, h3").forEach(el => {
-  		el.addEventListener("copy", e => e.preventDefault());
-  		el.addEventListener("cut", e => e.preventDefault());
-  		el.addEventListener("contextmenu", e => e.preventDefault());
+			el.addEventListener("copy", e => e.preventDefault());
+			el.addEventListener("cut", e => e.preventDefault());
+			el.addEventListener("contextmenu", e => e.preventDefault());
 		});
+	});
 	</script>
 		<nav class="navbar">
 			<div class="contenedor">
@@ -31,21 +33,21 @@ session_start();
 				<a href="#">Cartera</a>
 				<?php if(isset($_SESSION['usuario'])): ?>
 				<a href="javascript:void(0)" class="user-icon"><?php echo $_SESSION['usuario']; ?></a>
-				<section class="user-container">
-					<section class="dropdown-menu">
-						<section class="dropdown-wrapper">
-							<section class="user-info">
+				<div class="user-container">
+					<div class="dropdown-menu">
+						<div class="dropdown-wrapper">
+							<div class="user-info">
 								<h3><?php echo $_SESSION['nombre']; ?></h3>
-							</section>
+							</div>
 							<hr>
-							<section class="menu-options">
-								<section>
-									<a href="php/logout.php">Cerrar sesión</a>
-								</section>
-							</section>
-						</section>
-					</section>
-				</section>
+							<div class="menu-options">
+								<div>
+								<a href="php/logout.php">Cerrar sesión</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>	
 		</nav>
 					<?php else: ?>
@@ -55,7 +57,7 @@ session_start();
 					<?php endif; ?>
 		<div class="contenedor-imagen">
 			<a href="#">
-				<img src="access/Img/ImagIndex.png" width=50%>
+				<img src="access/Img/ImagIndex.png" width="50%">
 			</a>
 		</div>
 	</header>
