@@ -12,6 +12,7 @@ session_start();
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Noto+Sans+JP&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/stylemenu.css">
 </head>
 <body>
 <header>

@@ -163,76 +163,7 @@
 		margin-bottom: 10px;
 		color: #D3D6DA;
 	}
-	/* * ============================== */
-	/* * ======== MENU USUARIO ======== */
-	/* * ============================== */
-	.user-container {
-		position: relative;
-		display: inline-block;
-	}
-
-	.user-icon{
-		display: inline-block;
-	}
-
-.dropdown-menu{
-    position: absolute;
-    top: 100%;
-    right: 0px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    width: 168px;
-    border-radius: 10px;
-    overflow: hidden;
-    max-height: 0;
-    opacity: 0;
-
-    transition: all 0.3s ease;
-    z-index: 100;
-}
-
-	.dropdown-wrapper {
-		padding: 20px;
-	}
-
-	.user-info {
-		display: flex;
-		align-items: center;
-		gap: 15px;
-	}
-
-	.user-info a{
-		font-size: 1.2em;
-	}
-
-	.dropdown-menu hr{
-		margin: 15px 0;
-		border: 0;
-		height: 1px;
-		background-color: #ccc;
-	}
-
-	.menu-options {
-		display: flex;
-		flex-direction: column;
-		gap: 13px;
-	}
-
-	.menu-options div{
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-	}
-
-	.menu-options span{
-		font-size: 20px;
-		color: #aaa;	
-	}
-
-	.open-menu{
-		max-height: 400px;
-		opacity: 1;
-	}
+	
 	/* * ============================== */
 	/* * ====== MEDIA QUERIES ========= */
 	/* * ============================== */
