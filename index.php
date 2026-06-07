@@ -9,9 +9,11 @@ session_start();
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>COMPRA FACIL</title>
     <link rel="shortcut icon" href="access/img/Logo.ico">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Noto+Sans+JP&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/stylebusqueda.css">
 	<link rel="stylesheet" href="css/stylemenu.css">
 </head>
 <body>
@@ -28,6 +30,7 @@ session_start();
 		<nav class="navbar">
 			<div class="contenedor">
 				<a href="#">Inicio</a>
+				<a href="#">Categoria</a>
 				<a href="#">Ofertas</a>
 				<a href="Ropa.html">Moda</a>
 				<a href="#">Cartera</a>
@@ -61,6 +64,10 @@ session_start();
 			</a>
 		</div>
 	</header>
+		<div class="containerdos">
+			<input type="text" placeholder="Buscar...">
+			<button><i class="fa-solid fa-magnifying-glass"></i></button>
+		</div>
 <main id="blog">
 		<div class="contenedor">
 			<aside>

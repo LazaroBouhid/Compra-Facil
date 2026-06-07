@@ -1,0 +1,13 @@
+.producto {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.producto img {
+    width: 23%;
+}
+
+.info {
+    flex: 1;
+}
