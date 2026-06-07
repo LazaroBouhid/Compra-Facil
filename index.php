@@ -8,7 +8,7 @@ session_start();
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>COMPRA FACIL</title>
-    <link rel="shortcut icon" href="access/Img/Logo.ico">
+    <link rel="shortcut icon" href="access/img/Logo.ico">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Noto+Sans+JP&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" href="css/styles.css">
@@ -30,7 +30,6 @@ session_start();
 				<a href="#">Inicio</a>
 				<a href="#">Ofertas</a>
 				<a href="Ropa.html">Moda</a>
-				<a href="#">Soporte</a>
 				<a href="#">Cartera</a>
 				<?php if(isset($_SESSION['usuario'])): ?>
 				<a href="javascript:void(0)" class="user-icon"><?php echo $_SESSION['usuario']; ?></a>
@@ -58,7 +57,7 @@ session_start();
 					<?php endif; ?>
 		<div class="contenedor-imagen">
 			<a href="#">
-				<img src="access/Img/ImagIndex.png" width="50%">
+				<img src="access/img/ImagIndex.png" width="50%">
 			</a>
 		</div>
 	</header>
@@ -117,7 +116,13 @@ session_start();
 	  </div>
 </div>
 </main>
-<footer></footer>
+<footer>
+		</script>
+		<nav class="navbar">
+				<a href="#">Soporte</a>
+			</div>	
+		</nav>
+</footer>
 
 <script>
 const userIcon = document.querySelector('.user-icon'); 
