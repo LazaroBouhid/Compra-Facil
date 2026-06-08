@@ -73,7 +73,7 @@ session_start();
         <img src="../access/img/product-1.png" alt="Laptop">
 
         <div class="info">
-            <h2>Precio: $360.500 PE</h2>
+            <h2>Precio:<div class="v">$360.500</div></h2>
             <h3>INTEL Core i9 10th GEN</h3>
             <h3>16GB RAM 3200 MHz</h3>
             <h3>Disco Sólido 500GB Kingston</h3>
