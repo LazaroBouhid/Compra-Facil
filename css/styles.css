@@ -3,14 +3,19 @@
 		padding: 0;
 		box-sizing: border-box;
 	}
-	.v{
+
+	.v {
 		color: green
 	}
+
 	a {
 		text-decoration: none;
 		outline: none;
 	}
-	h1, h2, h3 {
+
+	h1,
+	h2,
+	h3 {
 		user-select: none;
 		pointer-events: none;
 	}
@@ -18,49 +23,126 @@
 	a:hover {
 		text-decoration: underline;
 	}
+
 	body {
 		margin: 0px;
 		background: aliceblue;
-		font-family: 'Noto Sans JP', sans-serif;	
+		font-family: 'Noto Sans JP', sans-serif;
 	}
+
 	.button-add {
 		text-align: center;
-		font-size: 16px;;
+		font-size: 16px;
+		;
 		background-color: white;
 		border-radius: 8px;
 		padding: 10px 25px;
 		color: black;
-		border: 2px solid #4CAF50; /* Green */
+		border: 2px solid #4CAF50;
+		/* Green */
 		transition-duration: 0.4s;
 	}
-	
+
 	.button-add:hover {
-		background-color: #4CAF50; /* Green */
+		background-color: #4CAF50;
+		/* Green */
 		color: white;
 	}
-	.page-content {	
+
+	.page-content {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-evenly;
 		border: 1px solid black;
 	}
-		.card {
-			/* Add shadows to create the "card" effect */
-			box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-			transition: 0.3s;
-		}
-		
-		/* On mouse-over, add a deeper shadow */
-		.card:hover {
-			box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-		}
-		
-		/* Add some padding inside the card container */
-		.container {
-			padding: 2px 16px;
-		}
+
+	.card {
+		/* Add shadows to create the "card" effect */
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		transition: 0.3s;
+	}
+
+	/* On mouse-over, add a deeper shadow */
+	.card:hover {
+		box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+	}
+
+	/* Add some padding inside the card container */
+	.container {
+		padding: 2px 16px;
+	}
 
 
+	/* * ============================== */
+	/* * ======== MENU USUARIO ======== */
+	/* * ============================== */
+	.user-container {
+		position: relative;
+		display: inline-block;
+	}
+
+	.user-icon {
+		display: inline-block;
+	}
+
+	.dropdown-menu {
+		position: absolute;
+		top: 100%;
+		right: 0px;
+		background-color: #fff;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+		width: 168px;
+		border-radius: 10px;
+		overflow: hidden;
+		max-height: 0;
+		opacity: 0;
+
+		transition: all 0.3s ease;
+		z-index: 100;
+	}
+
+	.dropdown-wrapper {
+		padding: 20px;
+	}
+
+	.user-info {
+		display: flex;
+		align-items: center;
+		gap: 15px;
+	}
+
+	.user-info a {
+		font-size: 1.2em;
+	}
+
+	.dropdown-menu hr {
+		margin: 15px 0;
+		border: 0;
+		height: 1px;
+		background-color: #ccc;
+	}
+
+	.menu-options {
+		display: flex;
+		flex-direction: column;
+		gap: 13px;
+	}
+
+	.menu-options div {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.menu-options span {
+		font-size: 20px;
+		color: #aaa;
+	}
+
+	.open-menu {
+		max-height: 400px;
+		opacity: 1;
+	}
 
 	/* * ============================== */
 	/* * ============ HEADER ========== */
@@ -115,6 +197,44 @@
 	/* * ============================== */
 	/* * ============ MAIN ============ */
 	/* * ============================== */
+	
+	.containerdos { 
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 20px auto;
+		position: relative;
+		width: fit-content;
+		right: 17%;
+	}
+
+	.containerdos input {
+		width: 350px;
+		padding: 10px;
+		padding-right: 45px;
+		border-radius: 5px;
+		border: 0;
+		outline: none;
+		font-size: 1rem;
+	}
+
+	.containerdos button {
+		position: absolute;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		background-color: #FF5014;
+		padding: 10px 15px;
+		border: 0;
+		border-radius: 0 5px 5px 0;
+		color: #fff;
+		cursor: pointer;
+	}
+
+	.containerdos button:hover {
+		background-color: rgba(0, 0, 0, .2);
+	}
 
 	main {
 		min-height: 100vh;
@@ -163,11 +283,11 @@
 		margin-bottom: 10px;
 		color: #D3D6DA;
 	}
-	
+
 	/* * ============================== */
 	/* * ====== MEDIA QUERIES ========= */
 	/* * ============================== */
-	@media screen and (max-width: 900px){
+	@media screen and (max-width: 900px) {
 		.navbar .contenedor {
 			flex-wrap: wrap;
 			margin: 0;

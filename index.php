@@ -13,8 +13,6 @@ session_start();
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Noto+Sans+JP&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" href="css/styles.css">
-	<link rel="stylesheet" href="css/stylebusqueda.css">
-	<link rel="stylesheet" href="css/stylemenu.css">
 </head>
 <body>
 <header>
@@ -54,7 +52,7 @@ session_start();
 			</div>	
 		</nav>
 					<?php else: ?>
-    				<a href="pages/Registro.php">Iniciar Sesión</a>
+    				<a href="pages/register.php">Iniciar Sesión</a>
 			</div>
 		</nav>					
 					<?php endif; ?>

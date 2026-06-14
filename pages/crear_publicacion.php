@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['usuario'])) {
-    header("Location: login_usuario.php"); // Redirigir si no está logueado
+    header("Location: login_user.php"); // Redirigir si no está logueado
     exit();
 }
 ?>
@@ -18,8 +18,6 @@ if (!isset($_SESSION['usuario'])) {
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Noto+Sans+JP&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" href="../css/styles.css">
-	<link rel="stylesheet" href="../css/stylebusquedapag.css">
-	<link rel="stylesheet" href="../css/stylemenu.css">
 	<link rel="stylesheet" href="../css/styleproduct.css">
 </head>
 <body>
@@ -60,14 +58,14 @@ if (!isset($_SESSION['usuario'])) {
 			</div>	
 		</nav>
 					<?php else: ?>
-    				<a href="../pages/Registro.php">Iniciar Sesión</a>
+    				<a href="../pages/register.php">Iniciar Sesión</a>
 			</div>
 		</nav>					
 					<?php endif; ?>
 </header>
     <main>
         <h1>Crear Nueva Publicación</h1>
-        <form action="../php/procesar_publicacion.php" method="POST" enctype="multipart/form-data">
+        <form action="../php/process_publication.php" method="POST" enctype="multipart/form-data">
             <label for="titulo">Título:</label>
             <input type="text" id="titulo" name="titulo" required><br>
 

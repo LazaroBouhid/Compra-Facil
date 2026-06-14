@@ -28,7 +28,7 @@ if(mysqli_num_rows($resultado) > 0){
         echo '
         <script>
             alert("Contraseña incorrecta");
-            window.location = "../pages/Registro.php";
+            window.location = "../pages/register.php";
         </script>
         ';
         exit;
@@ -38,7 +38,7 @@ if(mysqli_num_rows($resultado) > 0){
     echo '
     <script>
         alert("Usuario no existe");
-        window.location = "../pages/Registro.php";
+        window.location = "../pages/register.php";
     </script>
     ';
     exit;

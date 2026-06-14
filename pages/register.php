@@ -29,7 +29,7 @@
 			<!--Formulario de Login y Register-->
 			<div class="contenedor__login-register">
 				<!--Login-->
-				<form action="../php/login_usuario.php" method="POST" class="formulario__login"> 
+				<form action="../php/login_user.php" method="POST" class="formulario__login"> 
 					<h2>Iniciar Sesión</h2>
 					<input type="text" placeholder="Correo Electronico" name ="email">
 					<input type="password" placeholder="contraseña" name ="contrasena">
